@@ -2,8 +2,6 @@
 
 A C Linear Algebra header-only library
 
-### v0.31
+### v0.32
 Added:
-> types: t_vec4
-
-> functions: vec4
+> defines: MIN MAX CLAMP

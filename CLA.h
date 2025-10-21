@@ -4,6 +4,13 @@
 # include <stdbool.h>
 # include <stdint.h>
 
+# define MAX(_a, _b) \
+	({ __typeof__(_a) __a = (_a), __b = (_b); __a > __b ? __a : __b; })
+# define MIN(_a, _b) \
+	({ __typeof__(_a) __a = (_a), __b = (_b); __a < __b ? __a : __b; })
+# define CLAMP(_v, _min, _max) \
+	MIN(_max, MAX(_v, _min))
+
 typedef union u_vec2i {
 	struct {
 		int	x;
