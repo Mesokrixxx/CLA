@@ -72,6 +72,14 @@ static inline bool	vec2is_contains(const t_vec2i *vs, uint64_t vcount, t_vec2i v
 
 static inline t_vec2	vec2(float x, float y) { return (t_vec2){{ x, y }}; }
 static inline t_vec2	vec2_add(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ v1.x + v2.x, v1.y + v2.y }}; }
+static inline t_vec2	vec2_sub(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ v1.x - v2.x, v1.y - v2.y }}; }
+static inline t_vec2	vec2_mul(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ v1.x * v2.x, v1.y * v2.y }}; }
+static inline t_vec2	vec2_div(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ v1.x / v2.x, v1.y / v2.y }}; }
+
+static inline t_vec2	vec2_adds(t_vec2 v, float x) { return (t_vec2){{ v.x + x, v.y + x }}; }
+static inline t_vec2	vec2_subs(t_vec2 v, float x) { return (t_vec2){{ v.x - x, v.y - x }}; }
+static inline t_vec2	vec2_muls(t_vec2 v, float x) { return (t_vec2){{ v.x * x, v.y * x }}; }
+static inline t_vec2	vec2_divs(t_vec2 v, float x) { return (t_vec2){{ v.x / x, v.y / x }}; }
 
 static inline t_vec4	vec4(float x, float y, float z, float w) { return (t_vec4){{ x, y, z, w }}; }
 
