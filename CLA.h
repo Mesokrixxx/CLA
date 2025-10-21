@@ -71,7 +71,7 @@ static inline bool	vec2is_contains(const t_vec2i *vs, uint64_t vcount, t_vec2i v
 }
 
 static inline t_vec2	vec2(float x, float y) { return (t_vec2){{ x, y }}; }
-static inline t_vec2	vec2_add(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ x, y }}; }
+static inline t_vec2	vec2_add(t_vec2 v1, t_vec2 v2) { return (t_vec2){{ v1.x + v2.x, v1.y + v2.y }}; }
 
 static inline t_vec4	vec4(float x, float y, float z, float w) { return (t_vec4){{ x, y, z, w }}; }
 
