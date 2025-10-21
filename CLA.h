@@ -20,6 +20,16 @@ typedef union u_vec2 {
 	float	raw[2];
 }	t_vec2;
 
+typedef union u_vec4 {
+	struct {
+		float	x;
+		float	y;
+		float	z;
+		float	w;
+	};
+	float	raw[4];
+}	t_vec4;
+
 typedef union u_mat4 {
 	struct {
 		float	m00, m01, m02, m03;
@@ -54,6 +64,8 @@ static inline bool	vec2is_contains(const t_vec2i *vs, uint64_t vcount, t_vec2i v
 }
 
 static inline t_vec2	vec2(float x, float y) { return (t_vec2){{ x, y }}; }
+
+static inline t_vec4	vec4(float x, float y, float z, float w) { return (t_vec4){{ x, y, z, w }} };
 
 static inline t_mat4	mat4_identity(void) {
 	t_mat4	m = {0};

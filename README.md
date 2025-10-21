@@ -2,11 +2,8 @@
 
 A C Linear Algebra header-only library
 
-### v0.21
+### v0.3
 Added:
-> types: t_vec2 t_mat4
+> types: t_vec4
 
-> functions: vec2 mat4_identity mat4_ortho
-
-Removed:
-> defines: vec2i_scale
+> functions: vec4
