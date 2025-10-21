@@ -2,6 +2,6 @@
 
 A C Linear Algebra header-only library
 
-### v0.32
+### v0.33
 Added:
-> defines: MIN MAX CLAMP
+> defines: vec2_add
